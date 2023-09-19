@@ -11,45 +11,103 @@
             img {height: 200px;
                 width: auto;
             }
+
+            #container {
+                width: 900px;
+            }
+
+            #section2 {
+                display: flex;
+                width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #column1 {
+                width: 450px;
+            }
+
+            #column2 {
+			    width: 450px;
+            }
+
+            #section3 {
+                display: flex;
+                width: 900px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            #labs {
+                width: 450px;
+            }
+
+            #assignments {
+			    width: 450px;
+            }
         </style>
 
     </head>
     <body>
 
-        <h1>Tae Han Lee</h1>
+        <div id="section1">
+            <h1>Tae Han Lee</h1>
 
-        <hr>
+            <p><a href="mailto:taehl@usc.edu">taehl@usc.edu</a></p>
 
-        <p><a href="mailto:taehl@usc.edu">taehl@usc.edu</a></p>
+        </div>
+        <!--Section 1-->
 
-        <p>Favorite Color: <strong>Cardinal</strong></p>
+        <div id="container">
 
-        <p>Favorite Website: <a href="https://www.marshall.usc.edu">University of Southern California: Marshall School of Business</a></p>
+            <hr>
 
-        <p>Favorite Activity: </p>
+            <div id="section2">
+                <div id="column1">
+                    <p>Favorite Color: <strong>Cardinal</strong></p>
 
-        <img src="https://www.pureexploration.nz/assets/Uploads/_resampled/ScaleWidthWyIxNTAwIl0/How-to-Rock-Climb-A-Beginners-Guide-6.jpg" alt="Climbing Image">
+                    <p>Favorite Website: <a href="https://www.marshall.usc.edu">USC Marshall School of Business</a></p>
 
-        <p>Fall 2023 Schedule:</p>
-        <ul>
-            <li>ITP 104: Introduction to Web Development</li>
-            <li>BUAD 302: Communication Strategy in Business</li>
-            <li>BUAD 306: Business Finance</li>
-            <li>BUAD 310: Applied Business Statistics</li>
-            <li>ECON 352x: Macroeconomics for Business</li>
-        </ul>
+                    <p>Favorite Activity: </p>
 
-        <p>Completed Assignments:</p>
-        <ul>
-            <li><a href="assignment_01/resume.html">Assignment 1</a></li>
-            <li><a href="assignment_02/Interests Page.html">Assignment 2</a></li>
-        </ul>
+                    <img src="https://www.pureexploration.nz/assets/Uploads/_resampled/ScaleWidthWyIxNTAwIl0/How-to-Rock-Climb-A-Beginners-Guide-6.jpg" alt="Climbing Image">
+                </div>
 
-        <p>Completed Labs:</p>
-        <ul>
-            <li><a href="index.html">Lab 2</a></li>
-            <li><a href="lab_03/resume.html">Lab 3</a></li>
-        </ul>
+                <div id="column2">
+                    <p>Fall 2023 Schedule:</p>
+                    <ul>
+                        <li>ITP 104: Web Development</li>
+                        <li>BUAD 302: Communication</li>
+                        <li>BUAD 306: Finance</li>
+                        <li>BUAD 310: Statistics</li>
+                        <li>ECON 352x: Macroeconomics</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="section3">
+                <div id="assignments">
+                    <p>Completed Assignments:</p>
+                    <ul>
+                        <li><a href="assignment_01/resume.html">Assignment 1</a></li>
+                        <li><a href="assignment_02/Interests Page.html">Assignment 2</a></li>
+                    </ul>
+                </div>
+
+                <div id="labs">
+                    <p>Completed Labs:</p>
+                    <ul>
+                        <li><a href="index.html">Lab 2</a></li>
+                        <li><a href="lab_03/resume.html">Lab 3</a></li>
+                        <li><a href="index.html">Lab 4</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
 
 
     </body>
