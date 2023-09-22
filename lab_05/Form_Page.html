@@ -1,0 +1,227 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Tae Lee | Form Page</title>
+
+        <style>
+
+            #format {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .center {
+                text-align: center;
+            }
+
+            .row_format {
+                margin-left: 22em;
+                display: flex;
+            }
+
+            .left-column {
+                width: 10em;
+            }
+
+            .box {
+                width: 20em;
+            }
+
+            .submit {
+                background-color: maroon;
+                font-size: 1em;
+                color: white;
+                margin-right: 1em;
+            }
+
+            .clear {
+                background-color: gray;
+                font-size: 1em;
+                color: black;
+                margin-right: 1em;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <div id="format">
+    
+            <h1 class="center">Korean Business Student Association Interest Form</h1>
+
+		    <form action="successfully_applied.html">
+
+                <div class="row_format">
+                    <div class="left-column">
+                        <label for="first-name-id">First Name:</label>
+                    </div>
+                    
+                    <input class="box" type="text" id="first-name-id" placeholder="Tommy">
+                </div>
+
+               <p></p>
+
+                <div class="row_format">
+                    <div class="left-column">
+                        <label class="left-column" for="last-name-id">Last Name:</label>
+		    	    </div>
+
+                    <input class="box" type="text" id="last-name-id" placeholder="Trojan">
+                </div>
+
+                <p></p>
+
+		    	<div class="row_format">
+                    <div class="left-column">
+		    		    <label class="left-column" for="email-id">Email:</label>
+		    	    </div>
+
+                    <input class="box" type="email" id="email-id" placeholder="ttrojan@usc.edu">
+                </div>
+
+                <p></p>
+
+                <div class="row_format">
+                    <div class="left-column">
+		    		    <label class="left-column" for="phone-id">Phone Number:</label>
+                    </div>
+                    
+                    <input class="box" type="phone" id="phone-id" placeholder="(123)-456-7890">
+                </div>
+
+                <p></p>
+
+                <div class="row_format">
+                    <div class="left-column">
+                        <label class="left-column" for="major-id">Major:</label>
+                    </div>
+                    
+                    <input class="box" type="major" id="major-id" placeholder="Business Administration">
+                </div>
+
+                <p></p>
+
+		    	<div class="row_format">
+                    <div class="left-column">
+		    		    What year are you?
+                    </div>
+                    
+
+		    		    <label>
+		    		    	<input type="radio" name="student">
+		    		    	Freshman
+		    		    </label>
+
+		    		    <label>
+		    		    	<input type="radio" name="student">
+		    		    	Sophomore
+		    		    </label>
+
+                        <label>
+                            <input type="radio" name="student">
+                            Junior
+		    		    </label>
+
+                     <label>
+		    		    	<input type="radio" name="student">
+		    		    	Senior
+		    		    </label>
+
+                        <label>
+		    		    	<input type="radio" name="student">
+		    		    	Super Senior
+		    		    </label>
+                    </div>
+		    	</div>
+
+                <p></p>
+
+		    	<div class="row_format">
+                    <div class="left-column">
+		    			Department of interest?
+		    		</div>
+
+		    		<label>
+		    			<input type="checkbox">
+		    			Professional Operations
+		    		</label>
+
+		    		<label>
+		    			<input type="checkbox">
+		    			In-Reach
+		    		</label>
+
+		    		<label>
+		    			<input type="checkbox">
+		    			Marketing
+		    		</label>
+
+                    <label>
+		    			<input type="checkbox">
+		    			Finance
+		    		</label>
+
+                    <label>
+		    			<input type="checkbox">
+		    			Design
+		    		</label>
+
+                    <label>
+		    			<input type="checkbox">
+		    			Secretary
+		    		</label>
+		    	</div>
+
+                <p></p>
+
+                <div class="row_format">
+                    <div class="left-column">
+		    		    <label for="source-id">Where did you hear about us?</label>
+                    </div>
+
+		    		<select class="box" id="source-id">
+                        <option>(Select)</option>
+		    		    <option>Korean Student Association(KSO)</option>
+                        <option>Korea Scend-Off</option>
+                        <option>Club Website</option>
+					    <option>Club Event</option>
+                        <option>Professor</option>
+                        <option>Instagram</option>
+		    			<option>Friend</option>
+                        <option>Other</option>
+		    	    </select>
+                </div>
+                
+                <p></p>
+
+                <div class="row_format">
+                    <div class="left-column">
+		    			<label for="questions-id">Do you have any questions?</label>
+		    		</div>
+
+		    		<textarea class="box" id="questions-id" placeholder="N/A"></textarea>
+		    	</div>
+
+                <p></p>
+
+                <div class="row_format">
+		    		<label>
+		    			<input type="checkbox">
+		    			I accept terms & conditions
+		    		</label>
+                </div>
+
+                <p></p>
+
+		    	<div class="row_format">
+                    <button class="submit" type="submit">Submit Application</button>
+                    <button class="clear" type="reset">Clear Criterias</button>
+		    	</div>
+
+		    </form>
+
+        </div>
+
+    </body>
+</html>
