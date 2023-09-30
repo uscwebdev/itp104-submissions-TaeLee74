@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Tae Lee | Simple Photo Gallery</title>
+
+        <style>
+
+            #main {
+                width: 200px;
+                margin-left: auto;
+                margin-right: auto;
+                color: maroon;
+                background-color: white;
+                flex-direction: column;
+            }
+
+            .img {
+                float: right;
+                width: 210px;
+                height: auto;
+
+                opacity: 0.7;
+            }
+
+            .img:hover {
+                opacity: 1.0;
+            }
+
+            .image_container > p {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                visibility: hidden;
+            }
+
+            .img:hover + p {
+                visibility: visible;
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+        <div id="main">
+
+            <div class="image_container">
+                <img class="img" src="img/2563565-woman-climing-a-rock-wall.jpg" alt="Climbing">
+                <p>Climbing</p>
+            </div>
+            <div class="image_container">
+                <img class="img" src="img/file-20201126-15-1h1jzzy.jpg.webp" alt="Swimming">
+                <p>Swimming</p>
+            </div>
+
+            <div class="image_container">
+                <img class="img" src="img/Hiking-NPS-Photo-J-Tobiason_3.jpg" alt="Hiking">
+                <p>Hiking</p>
+            </div>
+
+            <div class="image_container">
+                <img class="img" src="img/kid playing tennis-carousel.jpg" alt="Tennis">
+                <p>Tennis</p>
+            </div>
+
+            <div class="image_container">
+                <img class="img" src="img/images.jpeg" alt="Gym">
+                <p>Gym</p>
+            </div>
+
+        </div>
+    </body>
+
+</html>
