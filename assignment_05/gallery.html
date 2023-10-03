@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tae Lee | Gallery</title>
+
+        <style>
+
+            #header {
+                justify-content: center;
+                background-image: url(img/bno-outdoor.jpg);
+                text-align: center;
+                height: 300px;
+                line-height: 400px;
+                color: yellow;
+                background-position: 0%;
+                background-position-y: 50%;
+            }
+
+            #footer {
+                background-color: gray;
+                color: white;
+                text-align: center;
+                height: 50px;
+                line-height: 50px;
+                font-size: 0.8em;
+            }
+
+            #wrapper {
+			    width: 1078px;
+                margin-left: auto;
+                margin-right: auto;
+		    	padding: 15px;
+                background-color: maroon;
+	    		border-left: 1px solid #000;
+		    	border-right: 1px solid #000;
+                display: flex;
+		    }
+
+            #box_container {
+                background-color: black;
+			    width: 1078px;
+            }
+
+            .box {
+                width: 130px;
+                height: 150px;
+                background-color: #3498db;
+                margin: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                float: left;
+            }
+            .big_box {
+                width: 608px;
+                height: 150px;
+                background-color: #3498db;
+                margin: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                float: left;
+            }
+            .long_box {
+                width: 280px;
+                height: 150px;
+                background-color: #3498db;
+                margin: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                float: left;
+            }
+            #navbar a {
+                text-decoration: none;
+                width: 150px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                display: block;
+                color: #777;
+                border-bottom: 2px solid #FFF;
+            }
+            #navbar {
+                display: flex;
+                justify-content: center;
+                box-shadow: 0px 3px 5px #777;
+            }
+
+            #navbar a:hover, #navbar #highlight-nav {
+                color: #900;
+                border-bottom: 2px solid #900;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div id="header">
+            <h1>Safety Guidelines</h1>
+        </div>
+
+        <div id="navbar">
+            <a href="Interests_Page.html">Interests Page</a>
+            <a id="highlight-nav" href="gallery.html">Gallery</a>
+        </div>
+
+        <div id="wrapper">
+            <div id="box_container">
+                <div class="big_box">1</div>
+                <div class="box">2</div>
+                <div class="long_box">3</div>
+                <div class="box">4</div>
+                <div class="box">5</div>
+                <div class="big_box">6</div>
+                <div class="box">7</div>
+                <div class="big_box">8</div>
+                <div class="box">9</div>
+                <div class="long_box">10</div>
+            </div>
+        </div>
+
+        <div id="footer">
+
+            Tae Han Lee &copy; 2023
+    
+        </div> 
+    </body>
+</html>

@@ -70,6 +70,40 @@
                 flex-direction: column;
             }
 
+            .image_container > p {
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+                visibility: hidden;
+            }
+
+            .img:hover + p {
+                visibility: visible;
+            }
+            
+            #navbar a {
+                text-decoration: none;
+                width: 150px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                display: block;
+                color: #777;
+                border-bottom: 2px solid #FFF;
+            }
+            
+            #navbar {
+                display: flex;
+                justify-content: center;
+                box-shadow: 0px 3px 5px #777;
+            }
+
+            #navbar a:hover, #navbar #highlight-nav {
+                color: #900;
+                border-bottom: 2px solid #900;
+            }
+
+        </style>
         </style>
 
     </head>
@@ -80,6 +114,10 @@
             <h1>Rock Climbing</h1>
         </div>
             
+        <div id="navbar">
+            <a id="highlight-nav" href="Interests_Page.html">Interests Page</a>
+            <a href="gallery.html">Gallery</a>
+        </div>
 
         <div id="wrapper">
             <div id="main_column">
@@ -104,12 +142,18 @@
             </div>
 
             <div id="images_column">
-                <img class="img" src="img/images.jpeg" alt="Rope Climbing Logo">
-                <p class="imagecaption">Outside Top-Rope Climbing</p>
-                <img class="img" src="img/Bouldering.png" alt="Bouldering Logo">
-                <p class="imagecaption">Inside Bouldering Climbing</p>
-                <img class="img" src="img/top_rope_climbing_hero.webp" alt="Top-Rope Climbing Logo">
-                <p class="imagecaption">Inside Top-Rope Climbing</p>
+                <div class="image_container">
+                    <img class="img" src="img/images.jpeg" alt="Rope Climbing Logo">
+                    <p class="imagecaption">Outside Top-Rope Climbing</p>
+                </div>
+                <div class="image_container">
+                    <img class="img" src="img/Bouldering.png" alt="Bouldering Logo">
+                    <p class="imagecaption">Inside Bouldering Climbing</p>
+                </div>
+                <div class="image_container">
+                    <img class="img" src="img/top_rope_climbing_hero.webp" alt="Top-Rope Climbing Logo">
+                    <p class="imagecaption">Inside Top-Rope Climbing</p>
+                </div>
             </div>
 
         </div>
