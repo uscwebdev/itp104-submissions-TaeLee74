@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tae Lee | Image Puzzle</title>
+
+        <style>
+            #flexbox {
+                width: 880px;
+                flex-wrap: wrap;
+                margin: auto;
+            }
+
+            .up_right {
+                position: relative;
+                bottom: 100px;
+                left: 50px;
+            }
+
+            .up_left {
+                position: relative;
+                bottom: 100px;
+                right: 50px;
+            }
+
+            .bottom_left {
+                position: relative;
+                up: 100px;
+                right: 50px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <h1></h1>
+        <div id="flexbox">
+
+            <div id="row_first">
+                <img class="bottom_left" src="img/row-1-column-1.jpg" alt="first block">
+                <img class="up_left" src="img/row-1-column-2.jpg" alt="fourth block">
+                <img class="up_right" src="img/row-1-column-3.jpg" alt="seventh block">   
+                <img src="img/row-2-column-1.jpg" alt="second block">            
+                <img class="up_left" src="img/row-2-column-2.jpg" alt="fifth block">
+                <img class="bottom_left" src="img/row-2-column-3.jpg" alt="sixth block">
+                <img src="img/row-3-column-1.jpg" alt="thrid block">
+                <img src="img/row-3-column-2.jpg" alt="sixth block">
+                <img class="up_right" src="img/row-3-column-3.jpg" alt="eighth block">
+            </div>
+        </div>
+    </body>
+
+</html>
