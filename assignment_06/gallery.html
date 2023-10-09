@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tae Lee | Gallery</title>
+ 
+        <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+
+        <style>
+
+            @font-face {
+                font-family: "Krinkes";
+                src: url(fonts/KrinkesRegularPERSONAL.ttf);
+            } 
+
+            #header {
+                justify-content: center;
+                background-image: url(img/bno-outdoor.jpg);
+                text-align: center;
+                height: 300px;
+                line-height: 400px;
+                color: yellow;
+                background-position: 0%;
+                background-position-y: 50%;
+                font-family: "Krinkes", fantasy;
+            }
+
+            #footer {
+                background-color: gray;
+                color: white;
+                text-align: center;
+                height: 50px;
+                line-height: 50px;
+                font-size: 0.8em;
+                font-family: 'Pixelify Sans', sans-serif;
+            }
+
+            #wrapper {
+			    width: 1078px;
+                margin-left: auto;
+                margin-right: auto;
+		    	padding: 15px;
+                background-color: maroon;
+	    		border-left: 1px solid #000;
+		    	border-right: 1px solid #000;
+                display: flex;
+		    }
+
+            .box_container {
+                background-color: black;
+			    width: 1078px;
+            }
+
+            .box {
+                width: 130px;
+                height: 150px;
+                background-color: #3498db;
+                margin: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                float: left;
+                overflow: hidden;
+			    position: relative;
+            }
+            .big_box {
+                width: 608px;
+                height: 150px;
+                background-color: #3498db;
+                margin: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                float: left;
+                overflow: hidden;
+			    position: relative;
+            }
+            .long_box {
+                width: 280px;
+                height: 150px;
+                background-color: #3498db;
+                margin: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                float: left;
+                overflow: hidden;
+			    position: relative;
+            }
+            #navbar a {
+                text-decoration: none;
+                width: 150px;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                display: block;
+                color: #777;
+                border-bottom: 2px solid #FFF;
+            }
+            #navbar {
+                display: flex;
+                justify-content: center;
+                box-shadow: 0px 3px 5px #777;
+            }
+
+            #navbar a:hover, #navbar #highlight-nav {
+                color: #900;
+                border-bottom: 2px solid #900;
+            }
+
+            #top-menu {
+			    display: flex;
+			    align-items: flex-start;
+			    justify-content: center;
+		    }
+
+            #navbar li:hover {
+			    background-color: #FC0;
+            }
+            
+            #top-menu ul {
+			    position: absolute;
+			    display: none;
+		    }
+
+            #sub-menu ul {
+			    top: 0px;
+			    left: 180px;
+		    }
+
+            #navbar li:hover > ul {
+			display: block;
+		    }
+
+            #navbar li {
+			    background-color: white;
+			    width: 180px;
+			    text-align: center;
+			    position: relative;
+		    }
+
+            .big_box > img {
+                width: auto;
+                height: 100%;
+            }
+
+            .big_box > .width-100 {
+                width: 100%;
+                height: auto;
+            }
+            .box > img {
+                width: auto;
+                height: 100%;
+            }
+
+            .box > .width-100 {
+                width: 100%;
+                height: auto;
+            }
+            .long_box > img {
+                width: auto;
+                height: 100%;
+            }
+
+            .long_box > .width-100 {
+                width: 100%;
+                height: auto;
+            }
+
+            .overlay {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+			right: 0px;
+			bottom: 0px;
+
+			background-color: rgba(0, 0, 0, 0.6);
+			color: #FFF;
+			text-align: center;
+
+			padding-top: 75px;
+
+			visibility: hidden;
+            }
+
+            .box:hover > .overlay {
+			visibility: visible;
+            }
+            .long_box:hover > .overlay {
+			visibility: visible;
+            }
+            .big_box:hover > .overlay {
+			visibility: visible;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div id="header">
+            <h1>Safety Guidelines</h1>
+        </div>
+        <div id="navbar">
+
+            <ul id="top-menu">
+                <li>
+                    <a href="Interests_Page.html">Interests Page</a>
+                    <ul id="sub-menu">
+                        <li><a href="">Outside Climbing</a></li>
+                        <li>
+                            <a href="">In-doors Climing</a>
+                            <ul>
+                                <li><a href="">Bouldering</a></li>
+                                <li><a href="">Top-Rope</a></li>
+                            </ul>
+                        </li>
+                    </ul></li>
+                <li>
+                    <a id="highlight-nav" href="gallery.html">Gallery</a>
+                    
+                </li>
+            </ul>
+    
+        </div>
+
+        <div id="wrapper">
+            <div class="box_container">
+                <div class="big_box">
+                    <img class="width-100" src="img/CecilaDaviesPCCodySnow-Enhanced.jpg" alt="1">
+                    <div class="overlay">Rock Climbing</div>
+                </div>
+                <div class="box">
+                    <img src="img/CityOfRocks_CodyLee_BuildingBlocks_TheMechanic12plus-scaled.jpg" alt="2">
+                    <div class="overlay">Sun Set</div>
+                </div>
+                <div class="long_box">
+                    <img src="img/COE_ROCK_Peterskill6_HRZ.jpg" alt="3">
+                    <div class="overlay">Desert</div>
+                </div>
+                <div class="box">
+                    <img src="img/Date-RockWall-1920X1080-72dpi-1.jpg" alt="4">
+                    <div class="overlay">Friendship</div>
+                </div>
+                <div class="box">
+                    <img src="img/GettyImages-699099379.jpg.webp" alt="5">
+                    <div class="overlay">Rope Climbing</div>
+                </div>
+                <div class="big_box">
+                    <img class="width-100" src="img/images-3.jpeg" alt="6">
+                    <div class="overlay">Strength</div>
+                </div>
+                <div class="box">
+                    <img src="img/istockphoto-1179235120-612x612.jpg" alt="7">
+                    <div class="overlay">Hang-Over</div>
+                </div>
+                <div class="big_box">
+                    <img class="width-100" src="img/katherine-collins-sw-25.jpg__1280x792_q70_crop_subject_location-1424,2136_subsampling-2.jpg" alt="8">
+                    <div class="overlay">Leg Placement</div>
+                </div>
+                <div class="box">
+                    <img src="img/rock-climbing-spots-for-kids-scaled.jpg" alt="9">
+                    <div class="overlay">First-Time</div>
+                </div>
+                <div class="long_box">
+                    <img class="width-100" src="img/RockclimbinginthePhilippines.jpg" alt="10">
+                    <div class="overlay">Open- ness</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+
+            Tae Han Lee &copy; 2023
+    
+        </div> 
+    </body>
+</html>
